@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Anime Guessrer</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      img {
+        max-width: 300px;
+        height: auto;
+        margin: 20px 0;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Anime Guesser</h1>
+    </div>
+    <div class="page">
+      <button onclick="getAnimeCharacter()" id="Random-Anime-Character" >Random Anime Character</button>
+      <button onclick="verifica()">Verify your answer 📩 !</button>
+     
+      <div class="data_user">
+        <label for=""> Name Caracter: </label> <input id="input" type="text" />
+      </div>
+     
+      <div class="info-bar">
+        <div class="spiral">
+          <img src="loading.png" alt="" />
+        </div>
+      </div>
+      <div class="result">
+        <h3 id="result"></h3>
+      </div>
+    
+      <div class="img-anime">
+        <img id="animeImage" alt="" />
+      </div>
+
+ 
+
+      <p id="about" class="about"></p>
+  
+
+      <div class="footer">
+        <h3>VIA :</h3>
+        <a href="https://jikan.moe/"
+          ><h3>Jikan API</h3>
+          <img class="via-logo" src="jikan.logo.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
