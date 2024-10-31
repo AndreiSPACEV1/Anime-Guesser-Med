@@ -36,8 +36,8 @@ async function getAnimeCharacter() {
   } catch {
     document.getElementById("Random-Anime-Character").disabled = true;
 
-    console.log("Nu spama ca prostu pe butonu de generat 💢😡 !!!");
-    alert("Nu spama ca prostu pe butonu de generat 💢😡 !!!");
+    console.log("Please avoid pressing the generate button repeatedly 💢😡 !!!");
+    alert("Please avoid pressing the generate button repeatedly 💢😡 !!!");
 
     setTimeout(() => {
       document.getElementById("Random-Anime-Character").disabled = false;
